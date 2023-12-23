@@ -65,7 +65,7 @@ div.email{
     padding-left: 50px;
     display: inline-block;
     width: 380px;
-    margin-top: 55px;
+    margin-top: 35px;
 }
 div.password{
     width: 800px;
@@ -73,6 +73,20 @@ div.password{
     display: inline-block;
     margin-top: 55px;
 }
+
+div.forgotpassword{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    /* border: 1px solid green; */
+}
+
+a#forgotpassword{
+    display: inline-block;
+    font-size: x-large;
+    /* border: 1px solid red; */
+}
+
 button{
     margin-top: 50px;
     margin-left: 50px;

@@ -5,6 +5,18 @@ from django.contrib.auth.forms import UserCreationForm
 
 from home.models import UserProfile
 
+# class UserProfileForm(forms.ModelForm):
+#     class Meta:
+#         model = UserProfile
+#         fields = ['image']
+
+#         widgets = {
+#             'image':forms.FileInput(attrs={
+#                 'class':'inl inl2',
+#                 'id':'lin'
+#             })
+#         }
+
 class UserForm(forms.ModelForm):
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={
         'class':'againpassword',
@@ -12,6 +24,8 @@ class UserForm(forms.ModelForm):
 
     }))
 
+# create user
+    
     class Meta:
         model = User
         fields = ['username', 'email', 'password']

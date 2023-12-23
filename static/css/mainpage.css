@@ -37,7 +37,7 @@ body {
 .carousel-item img {
   width: 100%;
   display: block;
-  height: 400px;
+  height: 550px;
 
 }
 
@@ -95,13 +95,14 @@ h2 {
 .popular-novels{
   background-color: #fff;
   border: 2px solid #cbc2c2;
-  margin: 10rem;
+  margin: 1rem;
   margin-top: 1.5rem;
   height: 420px;
   overflow: auto;
 }
 
 .grid-container-popular-novels {
+  width: max-content;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -114,10 +115,10 @@ h2 {
 .grid-item-popular-novels {
   border: 2px solid #cbc2c2;
   text-align: center;
-  width: 100px;
+  width: 250px;
   height: 253px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .grid-item-popular-novels img {

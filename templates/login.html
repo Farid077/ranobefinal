@@ -20,8 +20,11 @@
                 <label for="">Password</label>
                 <input type="password" class="passwordline" name="password">
             </div>
+            <div class="forgotpassword">
+                <a href="{% url 'password_reset' %}" id="forgot password">Forgot Password?</a>
+            </div>
             <div class="lastDiv">
-                <button type="submit" disabled="true"><h2>SUBMIT</h2></button>
+                <button type="submit" disabled><h2>SUBMIT</h2></button>
                 <div class="error"></div>
             </div>
         </form>

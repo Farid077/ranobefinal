@@ -15,6 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
+<div id="div-form"></div>
+<form class="inl inl0" id="form" action="" method="post">
+  {% csrf_token %}
+    <label class="inl inl1" for="lin">
+      <img src="{{ request.user.profile.image.url }}" alt="" class="form-image">
+    </label>
+    <input class="inl inl2" type="file" id="lin" name="image">
+    <button class="inl inl3" id="b1" type="submit">SAVE</button>
+</form>
+
 <body>
   <header>
     <div class="navbar" id="navbar">
@@ -125,8 +135,8 @@
         <div class="profile-header">
           <div class="profile-header-body">
             <div class="profile-user">
-              <div class="profil-user-avatar">
-                <img src="{{ request.user.profile.image.url }}" alt="Username" class="profile-user-avatar-image">
+              <div class="profil-user-avatar" id="sekil">
+                <img src="{{ request.user.profile.image.url }}" alt="" class="profile-user-avatar-image">
               </div>
               <div class="profil-user-body">
                 <div class="profile-user-username">
@@ -245,6 +255,7 @@
 
   <!--dropdown menu-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../static/js/userprofile.js"></script>
   <script>
 $(document).ready(function(){
   var dropdown1Visible = false;
